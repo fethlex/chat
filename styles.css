@@ -1,0 +1,54 @@
+/* Input Field */
+#input {
+    flex-grow: 1;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #36393f; /* Adjust background color to match Discord */
+    color: #fff; /* Change text color to white */
+    border-radius: 8px;
+    outline: none;
+    margin-right: 10px;
+    transition: background-color 0.3s ease; /* Add transition for smoother color change */
+  }
+  
+  #input::placeholder {
+    color: #b9bbbe;
+  }
+  
+  #input:focus {
+    background-color: #7289da; /* Change background color on focus */
+  }
+  
+  /* Username Input */
+  #username {
+    border-radius: 8px 0 0 8px;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #40444b; /* Adjust background color to match Discord */
+    color: #dcddde; /* Adjust text color */
+    outline: none;
+    transition: background-color 0.3s ease; /* Add transition for smoother color change */
+  }
+  
+  #username:focus {
+    background-color: #7289da; /* Change background color on focus */
+  }
+  
+  /* Username Animation */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #username {
+    animation: slideIn 0.5s ease forwards; /* Apply animation */
+  }
+  

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Chat</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mx-auto my-8">
+    <div class="flex">
+      <input id="username" autocomplete="off" class="rounded-l-lg p-4 border-t border-b border-l text-gray-800 border-gray-200 bg-gray-700 focus:outline-none" placeholder="Username"/>
+      <input id="input" autocomplete="off" class="rounded-l-lg p-4 border-t border-b border-l text-gray-800 border-gray-200 bg-gray-700 focus:outline-none" placeholder="Message"/>
+      <button id="sendBtn" class="px-8 rounded-r-lg bg-indigo-500 text-white font-bold p-4 uppercase border-gray-700 border-t border-b border-r focus:outline-none">Send</button>
+    </div>
+    <ul id="messages" class="border rounded p-4 overflow-y-auto max-h-64"></ul>
+  </div>
+
+  <script src="socket.io.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
