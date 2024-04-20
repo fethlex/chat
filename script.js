@@ -5,7 +5,7 @@ const colors = {
     green: "\x1b[32m",
 };
 
-const socket = io('http://localhost:3000');
+const socket = io('http://192.168.100.60:3000');
 
 const usernameInput = document.getElementById('username');
 const input = document.getElementById('input');
